@@ -1,0 +1,68 @@
+/* custom.css
+estils exclusius d'un projecte, exemple en concret 
+*/
+
+/*.wrapper,.container{border:2px solid #f00;}*/
+/*.fila, .row{border:2px solid #00f;}*/
+/*.columna, .col{border:2px solid #f00;}*/
+
+/* imatges que no sobresurtin */
+	section figure{text-align: center;}
+	
+	header figure img, section img{
+/*		max-width:400px;*/
+		width:100%;
+		padding: 0;
+		margin: 0;
+/*		margin:auto;*/
+	}
+
+/* eliminar bullets en el header	*/
+	header li{list-style-type: none;}
+
+
+.padding-0{padding: 0;}
+
+i{
+	margin: 8px;
+	color: #f4acb7ff;
+}
+
+.bar{
+	height: 20px;
+	padding: 2px;
+	border-radius: 10px;
+	background-color: #f4acb7ff;
+	text-align: center;
+	color: #fff;
+}
+
+.caja{padding: 6px 0;}
+
+.border-shadow{
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px 5px #ccc;
+}
+
+header{color: #A4A4A2;}
+header, article{
+	margin: 20px 0;
+}
+
+main.col{padding: 0;}
+@media (min-width: 768px) {
+	main.col{padding: 0 16px;}
+}
+
+
+h2{font-size: 2rem;}
+
+h1, h2, h3{color: #807E80;}
+
+.border-bottom{border-bottom: 1px solid #ccc;}
+
+footer, footer i{color: #fff;}
+
+li.col, ul.col{padding: 16px 0;}
+
+cite{text-decoration: underline;}

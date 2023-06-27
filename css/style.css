@@ -1,0 +1,272 @@
+/* style.css */
+
+/* manual d'estils del nostre projecte */
+
+/*
+        INDEX
+        #1- COLORS
+        #2- TIPOGRAPHY
+        #3- FORMATO DE TEXTOS        
+                ##1- Headings
+                ##2- paragraphs
+        #4- TABLES
+        #5- IMAGES
+        #6- BUTTONS
+        #7- ICONS
+        #8- RESSOURCES
+
+        ###########
+        HOME
+        ABOUT
+        PRODUCT- SINGLE
+        BLOG
+        CONTACT PAGE
+        404
+*/
+
+:root{
+	--color-1:#d8e2dcff;
+	--color-2:#ffffffff;
+	--color-3:#ffcad4ff;
+	--color-4:#f4acb7ff;
+	--color-5:#9d8189ff;
+        --color-6:#f6bd60;
+        --color-7:#f7ede2;
+        --color-8:#f5cac3;
+        --color-9:#84a59d;
+        --color-10:#f28482;
+        --color-green:#A8E506;
+	--titulo:'oswald';
+	--texto:'SourceSansPro';
+}
+
+
+/******************  COLORS ******************/
+        /*
+                https://coolors.co/palette/8ecae6-219ebc-023047-ffb703-fb8500
+                https://coolors.co/palette/f6bd60-f7ede2-f5cac3-84a59d-f28482
+        */
+
+		/* escala de rosas */
+		/*--color-1:pink;
+		--color-2:hotpink;
+		--color-3:deepink;
+		--color-4:mediumvioletred;
+		--color-5:palevioletred;*/
+
+		/*--platinum: #d8e2dcff;
+		--white: #ffffffff;
+		--pink: #ffcad4ff;
+		--cherry-blossom-pink: #f4acb7ff;
+		--mountbatten-pink: #9d8189ff;*/
+
+
+.color-1{color:var(--color-1);}
+.color-2{color:var(--color-2);}
+.color-3{color:var(--color-3);}
+.color-4{color:var(--color-4);}
+.color-5{color:var(--color-5);}
+.color-6{color:var(--color-6);}
+.color-7{color:var(--color-7);}
+.color-8{color:var(--color-8);}
+.color-9{color:var(--color-9);}
+.color-10{color:var(--color-10);}
+.colo-green{color:var(--color-green);}
+
+.bg-color-1{background-color:var(--color-1);}
+.bg-color-2{background-color:var(--color-2);}
+.bg-color-3{background-color:var(--color-3);}
+.bg-color-4{background-color:var(--color-4);}
+.bg-color-5{background-color:var(--color-5);}
+.bg-color-6{background-color:var(--color-6);}
+.bg-color-7{background-color:var(--color-7);}
+.bg-color-8{background-color:var(--color-8);}
+.bg-color-9{background-color:var(--color-9);}
+.bg-color-10{background-color:var(--color-10);}
+.bg-color-green{background-color: var(--color-green);}
+
+/******************  TIPOGRAPHY ******************/
+
+/* 
+headings:                oswald
+paragraphs:              SourceSansPro
+pre, blockquote:         SourceSansPro
+ */
+
+@font-face{
+        font-family:'oswald';
+        src:url('../fonts/Oswald/Oswald-Bold.ttf');
+        font-weight:bold;
+        font-style:normal;
+}
+
+@font-face{
+        font-family:'oswald';
+        src:url('../fonts/Oswald/Oswald-Regular.ttf');
+        font-weight:normal;
+        font-style:normal;
+}
+
+
+@font-face{
+        font-family:'SourceSansPro';
+        src:url('../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf');
+        font-weight:bold;
+        font-style:normal;
+}
+
+@font-face{
+        font-family:'SourceSansPro';
+        src:url('../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+        font-weight:normal;
+        font-style:normal;
+}
+
+/******************  FORMATO DE TEXTOS ******************/
+
+        /******************  ##HEADINGS ******************/
+                h1,h2,h3,h4,h5,h6{
+                        font-family: 'oswald',Times,serif;
+                }
+                h1{
+                        margin-bottom:0.5rem;
+                        font-size:1.5rem;
+                        line-height:1.5rem;
+                }
+                h2{
+                        margin-bottom:0.4rem;
+                        font-size:1.3rem;
+                        line-height:1.3rem;
+                }
+                h3{
+                        margin-bottom:0.3rem;
+                        font-size:1.1rem;
+                        line-height:1.1rem;
+                }
+                h4{
+                        margin-bottom:0.3rem;
+                        font-size:1rem;
+                        line-height:1rem;
+                }
+
+        /******************  ##PARAGRAPHS ******************/
+                p{
+                        margin-bottom:0.5rem;
+
+                        line-height:1.5rem;
+                        font-family:'SourceSansPro',helvetica,sans-serif;
+                        font-size:1rem;
+                        font-style:normal;
+                }
+/****************** BUTTONS ******************/
+        .btn{
+                display:block;
+                position:relative;
+
+                width:100px;
+                padding:0.5rem;
+                border:1px solid #000;
+                border-radius:10px;
+
+                color:#000;
+                text-decoration:none;
+                text-align:center;
+        }
+
+        .btn:hover{}
+        .btn:hover:before{}
+        .btn:hover:after{
+                display:inline-block;
+                position:absolute;
+                right:0.2rem;
+                z-index:1;
+                /* content:'>';*/
+
+        margin-left:.2rem;
+        }
+
+        .btn-info{
+                color:#000;
+                border:1px solid var(--color-2);
+                background-color:var(--color-3);
+        }
+        .btn-info:hover{}
+
+
+
+/******************  RECURSOS ******************/
+        .center{
+                margin-left:auto;
+                margin-right:auto;
+                text-align:center;
+        }
+        .separador-lateral-8{
+                padding-left: 4px;
+                padding-right: 4px;
+        }
+        .separador-lateral-16{
+                padding-left: 8px;
+                padding-right: 8px;
+        }
+
+        .separador-8{
+                padding-top:4px;
+                padding-bottom:4px;
+        }
+        .separador-16{
+                padding-top:8px;
+                padding-bottom:8px;
+        }
+        .separador-24{}
+        .separador-32{
+                padding-top:16px;
+                padding-bottom:16px;                
+        }
+
+        .quote-left{
+                position:relative;
+        }
+        
+        .quote-left::before{
+                position:absolute;
+                top:-1.5rem;
+                left:-2rem;
+                z-index:1;
+
+                content:'"';
+                color:var(--color-1);
+                font-size:5rem;
+        }
+
+        .quote-right{}
+        .quote-right::after{}
+
+        .ancla{
+                position:fixed;
+                bottom:8px;
+                right:8px;
+                display: inline-block;
+
+                width: 50px;
+                padding: 5px;
+                margin: 5px;
+
+                background-color: var(--color-3);
+                color: var(--color-5);
+                text-align: center;        
+        }
+
+        a{
+                text-decoration: none;
+                color: var(--color-5);
+        }
+
+
+
+
+
+
+
+
+
+
